@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CftTestApp</string>
+    <string name="cft">ЦФТ</string>
+    <string name="financial">Финансовых</string>
+    <string name="opportunity">Возможностей</string>
+    <string name="center">Центр</string>
+    <string name="search_bin">Search Bin</string>
 </resources>
