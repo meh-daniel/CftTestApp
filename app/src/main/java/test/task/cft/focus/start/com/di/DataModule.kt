@@ -18,7 +18,7 @@ class DataModule {
     @Provides
     @Singleton
     fun provideSessionRepository(
-        @Named("GitHubApi") binApi: BinApi
+        binApi: BinApi
     ) : BinRepository {
         return BinRepositoryImpl(binApi)
     }

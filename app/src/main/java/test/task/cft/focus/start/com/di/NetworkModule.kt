@@ -21,7 +21,7 @@ class NetworkModule {
 
     @Provides
     @Reusable
-    fun provideBaseUrl() : String = "https://binlist.net/"
+    fun provideBaseUrl() : String = "https://lookup.binlist.net/"
 
     @Provides
     @Reusable
