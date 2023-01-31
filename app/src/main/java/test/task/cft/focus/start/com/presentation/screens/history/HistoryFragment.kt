@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
 import test.task.cft.focus.start.com.R
 import test.task.cft.focus.start.com.databinding.FragmentHistoryBinding
 
+@AndroidEntryPoint
 class HistoryFragment: Fragment(R.layout.fragment_history) {
 
     private var _binding: FragmentHistoryBinding? = null

@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
 import test.task.cft.focus.start.com.R
 import test.task.cft.focus.start.com.databinding.FragmentSearchBinding
 
+@AndroidEntryPoint
 class SearchFragment: Fragment(R.layout.fragment_search) {
 
     private var _binding: FragmentSearchBinding? = null

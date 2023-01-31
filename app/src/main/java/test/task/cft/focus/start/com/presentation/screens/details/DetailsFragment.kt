@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
 import test.task.cft.focus.start.com.R
 import test.task.cft.focus.start.com.databinding.FragmentDetailsBinding
 
+@AndroidEntryPoint
 class DetailsFragment: Fragment(R.layout.fragment_details) {
 
     private var _binding: FragmentDetailsBinding? = null
