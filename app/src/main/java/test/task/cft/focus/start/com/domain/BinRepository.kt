@@ -4,6 +4,6 @@ import test.task.cft.focus.start.com.domain.model.Bin
 
 interface BinRepository {
 
-    fun search(bin: Int): Bin
+    suspend fun search(bin: Int): Bin
 
 }
