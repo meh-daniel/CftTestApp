@@ -7,5 +7,5 @@ data class Bin(
     val number: NumberCard,
     val prepaid: Boolean,
     val scheme: String,
-    val type: String
+    val type: String,
 )

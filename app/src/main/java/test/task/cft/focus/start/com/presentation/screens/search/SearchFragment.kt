@@ -14,8 +14,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 import test.task.cft.focus.start.com.R
 import test.task.cft.focus.start.com.databinding.FragmentSearchBinding
-import test.task.cft.focus.start.com.utils.observeInLifecycle
 import test.task.cft.focus.start.com.utils.convertToLinkGeo
+import test.task.cft.focus.start.com.utils.observeInLifecycle
 
 @AndroidEntryPoint
 class SearchFragment: Fragment(R.layout.fragment_search) {
