@@ -5,52 +5,52 @@ import com.google.gson.annotations.SerializedName
 
 data class BinNW(
     @SerializedName("bank")
-    val bank: Bank,
+    val bank: Bank?,
     @SerializedName("brand")
-    val brand: String,
+    val brand: String?,
     @SerializedName("country")
-    val country: Country,
+    val country: Country?,
     @SerializedName("number")
-    val number: Number,
+    val number: Number?,
     @SerializedName("prepaid")
-    val prepaid: Boolean,
+    val prepaid: Boolean?,
     @SerializedName("scheme")
-    val scheme: String,
+    val scheme: String?,
     @SerializedName("type")
-    val type: String
+    val type: String?
 ) {
     data class Bank(
         @SerializedName("city")
-        val city: String,
+        val city: String?,
         @SerializedName("name")
-        val name: String,
+        val name: String?,
         @SerializedName("phone")
-        val phone: String,
+        val phone: String?,
         @SerializedName("url")
-        val url: String
+        val url: String?
     )
 
     data class Country(
         @SerializedName("alpha2")
-        val alpha2: String,
+        val alpha2: String?,
         @SerializedName("currency")
-        val currency: String,
+        val currency: String?,
         @SerializedName("emoji")
-        val emoji: String,
+        val emoji: String?,
         @SerializedName("latitude")
-        val latitude: Int,
+        val latitude: Int?,
         @SerializedName("longitude")
-        val longitude: Int,
+        val longitude: Int?,
         @SerializedName("name")
-        val name: String,
+        val name: String?,
         @SerializedName("numeric")
-        val numeric: String
+        val numeric: String?
     )
 
     data class Number(
         @SerializedName("length")
-        val length: Int,
+        val length: Int?,
         @SerializedName("luhn")
-        val luhn: Boolean
+        val luhn: Boolean?
     )
 }
