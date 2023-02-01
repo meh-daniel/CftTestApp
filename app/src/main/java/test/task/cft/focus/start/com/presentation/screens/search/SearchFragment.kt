@@ -32,7 +32,7 @@ class SearchFragment: Fragment(R.layout.fragment_search) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupSubscribers()
-        viewModel.searchBin(45717360)
+        viewModel.searchBin("5189011434")
     }
 
     override fun onDestroyView() {
