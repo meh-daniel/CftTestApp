@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">CftTestApp</string>
+    <string name="cft">ЦФТ</string>
+    <string name="financial">Финансовых</string>
+    <string name="opportunity">Возможностей</string>
+    <string name="center">Центр</string>
+    <string name="search_bin">Search Bin</string>
+    <string name="nothingItem">-</string>
+    <string name="luhn">Luhn:</string>
+    <string name="length">Length:</string>
+    <string name="card_number">Card number:</string>
+    <string name="scheme">Scheme</string>
+    <string name="type">Type</string>
+    <string name="brand">Brand</string>
+    <string name="prepaid">Prepaid</string>
+    <string name="country">Country</string>
+    <string name="number_card">Number card</string>
+    <string name="bank">Bank</string>
+    <string name="city">City</string>
+    <string name="phone">Phone</string>
+    <string name="url">Url</string>
+    <string name="name">Name</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="currency">currency</string>
+    <string name="emoji">emoji</string>
+    <string name="alpha2">Alpha2</string>
+    <string name="numeric">Numeric</string>
+    <string name="enter_your_bin">enter your bin</string>
+    <string name="search">search</string>
+    <string name="general">General</string>
+    <string name="history">history</string>
+    <string name="look_history">look History</string>
 </resources>
