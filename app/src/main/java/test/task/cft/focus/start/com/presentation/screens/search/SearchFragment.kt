@@ -29,7 +29,7 @@ class SearchFragment: Fragment(R.layout.fragment_search) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentSearchBinding.inflate(inflater)
         return binding.root
     }

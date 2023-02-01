@@ -15,7 +15,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.onEach
 import test.task.cft.focus.start.com.R
 import test.task.cft.focus.start.com.databinding.FragmentHistoryBinding
-import test.task.cft.focus.start.com.presentation.screens.search.SearchState
 import test.task.cft.focus.start.com.utils.observeInLifecycle
 
 @AndroidEntryPoint
@@ -26,13 +25,13 @@ class HistoryFragment: Fragment(R.layout.fragment_history) {
 
     private val viewModel: HistoryViewModel by viewModels()
 
-    private val binAdapter = BinAdapter()
+    private lateinit var binAdapter: BinAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHistoryBinding.inflate(inflater)
         return binding.root
     }
@@ -40,6 +39,7 @@ class HistoryFragment: Fragment(R.layout.fragment_history) {
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binAdapter = BinAdapter(requireContext())
         initRecyclerView()
         setupSubscribers()
         setupListeners()
@@ -98,6 +98,5 @@ class HistoryFragment: Fragment(R.layout.fragment_history) {
                 false
             )
     }
-
 
 }

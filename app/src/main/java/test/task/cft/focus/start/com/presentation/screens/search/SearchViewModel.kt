@@ -1,6 +1,5 @@
 package test.task.cft.focus.start.com.presentation.screens.search
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -8,9 +7,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import test.task.cft.focus.start.com.data.toDomain
 import test.task.cft.focus.start.com.domain.BinRepository
-import java.net.ConnectException
 import javax.inject.Inject
 
 @HiltViewModel

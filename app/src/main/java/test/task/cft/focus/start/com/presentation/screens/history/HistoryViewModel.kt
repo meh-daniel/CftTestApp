@@ -8,7 +8,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import test.task.cft.focus.start.com.domain.BinRepository
-import test.task.cft.focus.start.com.presentation.screens.search.SearchState
 import javax.inject.Inject
 
 @HiltViewModel
@@ -44,6 +43,5 @@ class HistoryViewModel @Inject constructor(
             _state.value = state
         }
     }
-
 
 }
