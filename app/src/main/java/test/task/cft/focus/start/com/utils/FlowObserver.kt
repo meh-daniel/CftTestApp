@@ -8,11 +8,6 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
-/**
- * Given the design of the FlowObserver, I am grateful to this article:
- * https://proandroiddev.com/android-singleliveevent-redux-with-kotlin-flow-b755c70bb055
- */
-
 class FlowObserver<T> (
     lifecycleOwner: LifecycleOwner,
     private val flow: Flow<T>,
@@ -39,12 +34,6 @@ class FlowObserver<T> (
         })
     }
 }
-
-
-inline fun <reified T> Flow<T>.observeOnLifecycle(
-    lifecycleOwner: LifecycleOwner,
-    noinline collector: suspend (T) -> Unit
-) = FlowObserver(lifecycleOwner, this, collector)
 
 inline fun <reified T> Flow<T>.observeInLifecycle(
     lifecycleOwner: LifecycleOwner

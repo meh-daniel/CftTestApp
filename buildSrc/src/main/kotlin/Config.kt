@@ -3,7 +3,7 @@ import org.gradle.api.JavaVersion
 object Config {
 
     const val compileSdk = 32
-    const val minSDK = 22
+    const val minSDK = 21
     const val targetSDK = 32
 
     const val release = "release"
