@@ -72,9 +72,4 @@ dependencies {
     implementation(Deps.Android.CORE_KTX)
     implementation(Deps.Android.APPCOMPAT)
     implementation(Deps.Android.MATERIAL)
-    testImplementation(Deps.Test.JUNIT)
-    androidTestImplementation(Deps.Test.ANDROID_JUNIT)
-    androidTestImplementation(Deps.Test.ESPRESSO)
-    androidTestImplementation(Deps.Test.MOCKITO_CORE)
-    androidTestImplementation(Deps.Test.MOCKITO_KOTLIN)
 }

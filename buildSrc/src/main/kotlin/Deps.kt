@@ -70,16 +70,4 @@ object Deps {
         const val APPCOMPAT = "androidx.appcompat:appcompat:${androidAppcompat}"
         const val MATERIAL = "com.google.android.material:material:${androidMaterial}"
     }
-
-    object Test {
-        private const val testJUnit = "4.+"
-        private const val testAndroidxJUnit = "1.1.2"
-        private const val testEspresso = "3.3.0"
-        private const val mockito = "4.0.0"
-        const val JUNIT = "junit:junit:${testJUnit}"
-        const val ANDROID_JUNIT = "androidx.test.ext:${testJUnit}"
-        const val ESPRESSO = "androidx.test.espresso:espresso-core:${testEspresso}"
-        const val MOCKITO_CORE = "org.mockito:mockito-core:${mockito}"
-        const val MOCKITO_KOTLIN = "org.mockito.kotlin:mockito-kotlin:${mockito}"
-    }
 }

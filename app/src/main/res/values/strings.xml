@@ -30,4 +30,5 @@
     <string name="search">search</string>
     <string name="general">General</string>
     <string name="history">history</string>
+    <string name="look_history">look History</string>
 </resources>
