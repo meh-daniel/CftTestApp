@@ -26,18 +26,9 @@ class SearchViewModel @Inject constructor(
             setState(SearchState.Loading)
             try {
                 val data = repository.getBy(bin)
-                if(data.brand.isEmpty()) {
-                    setState(SearchState.Empty)
-                } else {
-                    setState(SearchState.Loaded(data))
-                }
-                Log.d("xxx123", "nw ${data}")
+                setState(SearchState.Loaded(data))
             } catch (e: Throwable) {
-                Log.d("xxx123", "nw $e")
-                when (e) {
-                    is ConnectException -> setState(SearchState.Error(e.message.toString(), true))
-                    else -> setState(SearchState.Error(e.message.toString(), false))
-                }
+                setState(SearchState.Error(e.message.toString()))
             }
         }
     }

@@ -20,7 +20,7 @@ class SplashFragment: Fragment(R.layout.fragment_splash) {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentSplashBinding.inflate(inflater)
         return binding.root
     }
