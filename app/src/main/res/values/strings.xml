@@ -20,4 +20,14 @@
     <string name="phone">Phone</string>
     <string name="url">Url</string>
     <string name="name">Name</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="currency">currency</string>
+    <string name="emoji">emoji</string>
+    <string name="alpha2">Alpha2</string>
+    <string name="numeric">Numeric</string>
+    <string name="enter_your_bin">enter your bin</string>
+    <string name="search">search</string>
+    <string name="general">General</string>
+    <string name="history">history</string>
 </resources>
